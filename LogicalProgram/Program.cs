@@ -7,14 +7,13 @@
             Console.WriteLine("Welcome to logical programming");
             while (true)
             {
-                Console.WriteLine("Select program\n 1.PerfectNumber");
+                Console.WriteLine("Select program\n 1.PrimeNumber");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
                     case 1:
-                        PerfectNumber perfectNumber = new PerfectNumber();
-                        perfectNumber.Number();
-                        break;
+                        PrimeNumber primeNumber = new PrimeNumber();
+                        primeNumber.PrimeNumCheck();
                         break;
                     default:
                         Console.WriteLine("Select correct option");
