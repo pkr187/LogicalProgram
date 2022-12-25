@@ -7,13 +7,14 @@
             Console.WriteLine("Welcome to logical programming");
             while (true)
             {
-                Console.WriteLine("Select program\n 1. fibonacci series");
+                Console.WriteLine("Select program\n 1.PerfectNumber");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
                     case 1:
-                        FibonacciSeries fibonacciSeries = new FibonacciSeries();
-                        fibonacciSeries.Series();
+                        PerfectNumber perfectNumber = new PerfectNumber();
+                        perfectNumber.Number();
+                        break;
                         break;
                     default:
                         Console.WriteLine("Select correct option");
