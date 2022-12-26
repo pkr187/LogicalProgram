@@ -5,21 +5,20 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to logical programming");
-            while (true)
-            {
-                Console.WriteLine("Select program\n 1.ReverseNumber");
+           
+                Console.WriteLine("Select program\n 1.TemperatureConversion");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
                     case 1:
-                        ReverseNumber reverseNumber = new ReverseNumber();
-                        reverseNumber.Number();
+                        TemperatureConversion temperatureConversion = new TemperatureConversion();
+                        temperatureConversion.Conversion();
                         break;
                     default:
                         Console.WriteLine("Select correct option");
                         break;
                 }
-            }
+            
         }
     }
 }
